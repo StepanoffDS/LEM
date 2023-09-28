@@ -1,0 +1,41 @@
+.swiper-button {
+
+  &-next,
+  &-prev {
+    width: 44px;
+    top: calc(100% - 20px);
+  }
+
+  &-prev::after {
+    content: '';
+    background-image: url('./../img/icons/arrow-left-white.svg');
+    background-position: center center; // x y
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+  }
+
+  &-next::after {
+    content: '';
+    background-image: url('./../img/icons/arrow-right-white.svg');
+    background-position: center center; // x y
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.swiper-scrollbar {
+  display: flex;
+  position: static !important;
+  margin: 0 auto;
+  width: calc(100% - (66px *2)) !important;
+  height: 1px !important;
+  background: rgba($color: $color-white, $alpha: 0.1);
+}
+
+.swiper-scrollbar-drag {
+  background: $color-accent;
+}

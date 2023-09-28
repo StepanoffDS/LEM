@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+
+  <section class="popup none">
+    <div class="popup__inner">
+      <div class="popup__remove"></div>
+      <div class="popup__text-blog">
+        <h2 class="popup__title">Подобрать проект</h2>
+        <p class="popup__description">Надежный партнер поможет с покупкой и подбором недвижимости в безопасном и
+          развитом штате Мексике.</p>
+      </div>
+      <form action="" class="popup__form form">
+        <input data-tel-input class="form__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+        <button type="reset" class="form__btn btn" onclick="buttonClick()">Отправить</button>
+        <p class="form__description">Отправляя заявку, вы соглашаетесь на <a href="#!">обработку персональных
+            данных</a>
+        </p>
+      </form>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+
+      <nav class="nav">
+        <a href="#!" class="logo">
+          <img src="./img/logo.svg" alt="">
+        </a>
+        <ul class="nav__list">
+          <li><a href="#!">Недвижимость</a></li>
+          <li><a href="#!">Лучшие предложения</a></li>
+          <li><a href="#!">Каталоги</a></li>
+          <li><a href="#!">Проекты</a></li>
+          <li><a href="#!">О нас</a></li>
+        </ul>
+        <div class="nav__info">
+          <div class="nav__info-phone-number">
+            <a href="#!">+7 (495) 222-33-44</a>
+            <span>Онлайн</span>
+          </div>
+          <div class="nav__info-languages">
+            <a href="#!" class="nav__info-language active">RUS</a>
+            <span> / </span>
+            <a href="#!" class="nav__info-language">ENG</a>
+          </div>
+        </div>
+        <div class="nav__btn">
+          <button class="nav-icon-btn">
+            <div class="nav-icon"></div>
+          </button>
+        </div>
+        <nav class="nav__nav-mobile">
+          <div class="nav__nav-mobile-languages">
+            <a href="#!" class="nav__info-language active">RUS</a>
+            <span> / </span>
+            <a href="#!" class="nav__info-language">ENG</a>
+          </div>
+          <ul class="nav__nav-mobile-list">
+            <li><a href="#!" class="nav__nav-mobile-list-link">Недвижимость</a></li>
+            <li><a href="#!" class="nav__nav-mobile-list-link">Лучшие предложения</a></li>
+            <li><a href="#!" class="nav__nav-mobile-list-link">Каталоги</a></li>
+            <li><a href="#!" class="nav__nav-mobile-list-link">Проекты</a></li>
+            <li><a href="#!" class="nav__nav-mobile-list-link">О нас</a></li>
+            <li><a href="#!" class="nav__nav-mobile-list-link link-out">Вконтакте </a></li>
+            <li><a href="#!" class="nav__nav-mobile-list-link link-out">Telegram</a></li>
+            <li><a href="#!" class="nav__nav-mobile-list-link link-out">Я.Дзен</a></li>
+            <li><a href="#!" class="nav__nav-mobile-list-link link-out">WhatsApp</a></li>
+          </ul>
+          <div class="nav__nav-mobile-info">
+            <div class="nav__nav-mobile-info-img"><img src="./img/nav/profile-picture.png" alt="profile picture"></div>
+            <div class="nav__nav-mobile-text">
+              <p>Есть вопросы? Мы онлайн!</p>
+              <a href="#!">+7 (495) 222-33-44</a>
+            </div>
+          </div>
+        </nav>
+      </nav>
+      <h1 class="header__title">Эксклюзивная недвижимость в Мексике.</h1>
+      <div class="header__popup">
+        <p class="header__popup-text">Надежный партнер поможет с покупкой и подбором недвижимости в безопасном и
+          развитом штате Мексике.</p>
+        <button data-popup-btn class="header__popup-button btn">Подобрать проект</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="promo">
+    <div class="container">
+      <div class="promo__img"><img src="./img/promo/promo-img.png" alt=""></div>
+      <div class="promo__text">
+        <h2 class="promo__text-title">Продажа недвижимости в одном из самых престижных регионов Мексики, в штате <span
+            class="color-accent">Кинтана-роо</span>.</h2>
+        <p class="promo__text-description">Наши клиенты становятся владельцами аппартаментов, вилл и коммерческих
+          помещений с целью инвестиции в престижную недвижимость или с целью получения вида на жительства в одном из
+          самых
+          благоустроенных штатов Мексики.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="types">
+    <div class="container">
+      <div class="types__inner img5">
+        <button class="types__section first">
+          <h3 class="types__section-name">Апартаменты <br>в Мексике</h3>
+        </button>
+        <button class="types__section second">
+          <h3 class="types__section-name">Виллы <br>в Мексике</h3>
+        </button>
+        <button class="types__section third">
+          <h3 class="types__section-name">Городская</h3>
+        </button>
+        <button class="types__section fourth">
+          <h3 class="types__section-name">Загородная</h3>
+        </button>
+        <button class="types__section fifth">
+          <h3 class="types__section-name">Коммерческая</h3>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="best-offer">
+    <div class="container">
+      <div class="best-offer__inner">
+        <div class="best-offer__text">
+          <h2 class="best-offer__text-title">Лучшие предложения</h2>
+          <p class="best-offer__text-description">Риелтор подберет объект под ваши условия. Организуем онлайн-просмотры
+            для клиентов, находящихся в других точках планеты.</p>
+        </div>
+        <div class="best-offer__cards">
+          <div class="swiper best-offer__swiper">
+            <div class="swiper-wrapper best-offer__swiper-wrapper">
+              <div class="swiper-slide best-offer__card">
+                <div class="best-offer__card-button">
+                  <img src="./img/best-offer/best-offer-01.png" alt="" class="best-offer__card-img">
+                </div>
+
+                <div class="best-offer__card-section">
+                  <span class="best-offer__card-type color-accent">Квартиры</span>
+                  <span class="best-offer__card-price color-accent">от 145 000 $</span>
+                </div>
+                <div class="best-offer__card-text">
+                  <h3 class="best-offer__card-title new">Kosuyolu Koru Evleri</h3>
+                  <p class="best-offer__card-desctription">Проект в элитном районе Мексико. Из окон открывается
+                    прекрасный вид на рощу Валилебаг.</p>
+                </div>
+                <button class="best-offer__card-link">Скачать презентацию</button>
+              </div>
+              <div class="swiper-slide best-offer__card">
+                <button class="best-offer__card-button">
+                  <img src="./img/best-offer/best-offer-02.png" alt="" class="best-offer__card-img">
+                </button>
+
+                <div class="best-offer__card-section">
+                  <span class="best-offer__card-type color-accent">Апартаменты</span>
+                  <span class="best-offer__card-price color-accent">от 160 000 $</span>
+                </div>
+                <div class="best-offer__card-text">
+                  <h3 class="best-offer__card-title">Levanto</h3>
+                  <p class="best-offer__card-desctription">Жилой комплекс премиум-класса, расположенный в самом сердце
+                    Мексики, в México</p>
+                </div>
+                <button class="best-offer__card-link">Скачать презентацию</button>
+
+              </div>
+              <div class="swiper-slide best-offer__card">
+                <button class="best-offer__card-button">
+                  <img src="./img/best-offer/best-offer-03.png" alt="" class="best-offer__card-img">
+                </button>
+
+                <div class="best-offer__card-section">
+                  <span class="best-offer__card-type color-accent">Квартиры</span>
+                  <span class="best-offer__card-price color-accent">от 180 000 $</span>
+                </div>
+                <div class="best-offer__card-text">
+                  <h3 class="best-offer__card-title">Nefes Koru Gokturk</h3>
+                  <p class="best-offer__card-desctription">Новый проект жилого комплекса квартир Nefes Koru Gokturk в
+                    живописном районе Мексико.</p>
+                </div>
+                <button class="best-offer__card-link">Скачать презентацию</button>
+
+              </div>
+              <div class="swiper-slide best-offer__card">
+                <button class="best-offer__card-button">
+                  <img src="./img/best-offer/best-offer-04.png" alt="" class="best-offer__card-img">
+
+                </button>
+
+                <div class="best-offer__card-section">
+                  <span class="best-offer__card-type color-accent">Апартаменты</span>
+                  <span class="best-offer__card-price color-accent">от 160 000 $</span>
+                </div>
+                <div class="best-offer__card-text">
+                  <h3 class="best-offer__card-title">Levanto</h3>
+                  <p class="best-offer__card-desctription">Жилой комплекс премиум-класса, расположенный в самом сердце
+                    Мексики, в México</p>
+                </div>
+                <button class="best-offer__card-link">Скачать презентацию</button>
+
+              </div>
+              <div class="swiper-slide best-offer__card">
+                <button class="best-offer__card-button">
+                  <img src="./img/best-offer/best-offer-05.png" alt="" class="best-offer__card-img">
+                </button>
+
+                <div class="best-offer__card-section">
+                  <span class="best-offer__card-type color-accent">Квартиры</span>
+                  <span class="best-offer__card-price color-accent">от 180 000 $</span>
+                </div>
+                <div class="best-offer__card-text">
+                  <h3 class="best-offer__card-title">Nefes Koru Gokturk</h3>
+                  <p class="best-offer__card-desctription">Новый проект жилого комплекса квартир Nefes Koru Gokturk в
+                    живописном районе Мексико.</p>
+                </div>
+                <button class="best-offer__card-link">Скачать презентацию</button>
+
+              </div>
+              <div class="swiper-slide best-offer__card">
+                <button class="best-offer__card-button">
+                  <img src="./img/best-offer/best-offer-06.png" alt="" class="best-offer__card-img">
+                </button>
+
+                <div class="best-offer__card-section">
+                  <span class="best-offer__card-type color-accent">Квартиры</span>
+                  <span class="best-offer__card-price color-accent">от 145 000 $</span>
+                </div>
+                <div class="best-offer__card-text">
+                  <h3 class="best-offer__card-title new">Kosuyolu Koru Evleri</h3>
+                  <p class="best-offer__card-desctription">Проект в элитном районе Мексико. Из окон открывается
+                    прекрасный вид на рощу Валилебаг.</p>
+                </div>
+                <button class="best-offer__card-link">Скачать презентацию</button>
+
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev">
+            </div>
+            <div class="swiper-button-next">
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="wrapper-tablet">
+            <div class="best-offer__card">
+              <button class="best-offer__card-button btn">
+                <img src="./img/best-offer/best-offer-01.png" alt="" class="best-offer__card-img">
+                <span class="best-offer__card-link">Скачать презентацию</span>
+              </button>
+
+              <div class="best-offer__card-section">
+                <span class="best-offer__card-type color-accent">Квартиры</span>
+                <span class="best-offer__card-price color-accent">от 145 000 $</span>
+              </div>
+              <div class="best-offer__card-text">
+                <h3 class="best-offer__card-title new">Kosuyolu Koru Evleri</h3>
+                <p class="best-offer__card-desctription">Проект в элитном районе Мексико. Из окон открывается
+                  прекрасный вид на рощу Валилебаг.</p>
+              </div>
+            </div>
+            <div class="best-offer__card">
+              <button class="best-offer__card-button btn">
+                <img src="./img/best-offer/best-offer-02.png" alt="" class="best-offer__card-img">
+                <span class="best-offer__card-link">Скачать презентацию</span>
+              </button>
+
+              <div class="best-offer__card-section">
+                <span class="best-offer__card-type color-accent">Апартаменты</span>
+                <span class="best-offer__card-price color-accent">от 160 000 $</span>
+              </div>
+              <div class="best-offer__card-text">
+                <h3 class="best-offer__card-title">Levanto</h3>
+                <p class="best-offer__card-desctription">Жилой комплекс премиум-класса, расположенный в самом сердце
+                  Мексики, в México</p>
+              </div>
+            </div>
+            <div class="best-offer__card">
+              <button class="best-offer__card-button btn">
+                <img src="./img/best-offer/best-offer-03.png" alt="" class="best-offer__card-img">
+                <span class="best-offer__card-link">Скачать презентацию</span>
+              </button>
+
+              <div class="best-offer__card-section">
+                <span class="best-offer__card-type color-accent">Квартиры</span>
+                <span class="best-offer__card-price color-accent">от 180 000 $</span>
+              </div>
+              <div class="best-offer__card-text">
+                <h3 class="best-offer__card-title">Nefes Koru Gokturk</h3>
+                <p class="best-offer__card-desctription">Новый проект жилого комплекса квартир Nefes Koru Gokturk в
+                  живописном районе Мексико.</p>
+              </div>
+            </div>
+            <div class="best-offer__card">
+              <button class="best-offer__card-button btn">
+                <img src="./img/best-offer/best-offer-04.png" alt="" class="best-offer__card-img">
+                <span class="best-offer__card-link">Скачать презентацию</span>
+              </button>
+
+              <div class="best-offer__card-section">
+                <span class="best-offer__card-type color-accent">Апартаменты</span>
+                <span class="best-offer__card-price color-accent">от 160 000 $</span>
+              </div>
+              <div class="best-offer__card-text">
+                <h3 class="best-offer__card-title">Levanto</h3>
+                <p class="best-offer__card-desctription">Жилой комплекс премиум-класса, расположенный в самом сердце
+                  Мексики, в México</p>
+              </div>
+            </div>
+            <div class="best-offer__card">
+              <button class="best-offer__card-button btn">
+                <img src="./img/best-offer/best-offer-05.png" alt="" class="best-offer__card-img">
+                <span class="best-offer__card-link">Скачать презентацию</span>
+              </button>
+
+              <div class="best-offer__card-section">
+                <span class="best-offer__card-type color-accent">Квартиры</span>
+                <span class="best-offer__card-price color-accent">от 180 000 $</span>
+              </div>
+              <div class="best-offer__card-text">
+                <h3 class="best-offer__card-title">Nefes Koru Gokturk</h3>
+                <p class="best-offer__card-desctription">Новый проект жилого комплекса квартир Nefes Koru Gokturk в
+                  живописном районе Мексико.</p>
+              </div>
+            </div>
+            <div class="best-offer__card">
+              <button class="best-offer__card-button btn">
+                <img src="./img/best-offer/best-offer-06.png" alt="" class="best-offer__card-img">
+                <span class="best-offer__card-link">Скачать презентацию</span>
+              </button>
+
+              <div class="best-offer__card-section">
+                <span class="best-offer__card-type color-accent">Квартиры</span>
+                <span class="best-offer__card-price color-accent">от 145 000 $</span>
+              </div>
+              <div class="best-offer__card-text">
+                <h3 class="best-offer__card-title new">Kosuyolu Koru Evleri</h3>
+                <p class="best-offer__card-desctription">Проект в элитном районе Мексико. Из окон открывается
+                  прекрасный вид на рощу Валилебаг.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="container">
+      <div class="catalog__inner">
+        <div class="catalog__text">
+          <h2 class="catalog__text-title">
+            Каталог самых перспективных для инвестиции объектов <span class="color-accent">Кинтана Роо</span>
+          </h2>
+          <p class="catalog__text-description">Выберите и скачайте pdf-каталог с лучшими предложениями компании.</p>
+        </div>
+        <button class="catalog__button btn">Скачать каталог</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefit">
+    <div class="container">
+      <div class="benefit__inner">
+        <div class="benefit-row1">
+          <h2 class="benefit__title">Наши преимущества</h2>
+          <button data-popup-btn class="benefit__button btn">Подобрать проект</button>
+        </div>
+        <div class="benefit__cards">
+          <div class="benefit__card first">
+            <h3 class="benefit__card-title">Большой выбор</h3>
+            <p class="benefit__card-description">Разнообразие объектов недвижимости в разных регионах страны.</p>
+          </div>
+          <div class="benefit__card second">
+            <h3 class="benefit__card-title">Оптимальная стоимость</h3>
+            <p class="benefit__card-description">Привлекательные цены по сравнению с другими странами.</p>
+          </div>
+          <div class="benefit__card third">
+            <h3 class="benefit__card-title">Приятные условия для жизни</h3>
+            <p class="benefit__card-description">Благоприятный климат и красивые пляжи, привлекающие туристов круглый
+              год.
+            </p>
+          </div>
+          <div class="benefit__card fourth">
+            <h3 class="benefit__card-title">Сдача недвижимости в аренду</h3>
+            <p class="benefit__card-description">Щедрые возможности для получения дохода от аренды недвижимости.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback__inner">
+        <h2 class="feedback__title">Отзывы</h2>
+        <div class="swiper feedback__swiper">
+          <div class="swiper-wrapper feedback__swiper-wrapper">
+            <div class="swiper-slide feedback__card">
+              <div class="feedback__card-row">
+                <h3 class="feedback__card-title">Александра</h3>
+                <span class="feedback__card-subtitle color-accent">Апартаменты</span>
+              </div>
+              <div class="feedback__card-row">
+                <p class="feedback__card-desctription">Хочу поделиться своим опытом сотрудничества: Обратилась в
+                  агентство по поводу продления туристического вида на жительство. Долго искала агента, потому что найти
+                  по настоящему профессионалов, которые владеют всей актуальной информацией и знают все тонкости в этом
+                  деле, сейчас не легко. Все документы были подготовлены оперативно, девушки сопровождали меня на всех
+                  этапах. Отдельная благодарность Евгении, которая постоянно была на связи.</p>
+              </div>
+              <div class="feedback__card-row feedback__card-row-link">
+                <a href="#!" class="feedback__card-link">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide feedback__card">
+              <div class="feedback__card-row">
+                <h3 class="feedback__card-title">Владимир</h3>
+                <span class="feedback__card-subtitle color-accent">Квартира</span>
+              </div>
+              <div class="feedback__card-row">
+                <p class="feedback__card-desctription">Хочу поделиться своим опытом сотрудничества: Обратилась в
+                  агентство по поводу продления туристического вида на жительство. Долго искала агента, потому что найти
+                  по настоящему профессионалов, которые владеют всей актуальной информацией и знают все тонкости в этом
+                  деле, сейчас не легко. Все документы были подготовлены оперативно, девушки сопровождали меня на всех
+                  этапах. Отдельная благодарность Евгении, которая постоянно была на связи.</p>
+              </div>
+              <div class="feedback__card-row feedback__card-row-link">
+                <a href="#!" class="feedback__card-link">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide feedback__card">
+              <div class="feedback__card-row">
+                <h3 class="feedback__card-title">Виктория</h3>
+                <span class="feedback__card-subtitle color-accent">Апартаменты</span>
+              </div>
+              <div class="feedback__card-row">
+                <p class="feedback__card-desctription">Хочу поделиться своим опытом сотрудничества: Обратилась в
+                  агентство по поводу продления туристического вида на жительство. Долго искала агента, потому что найти
+                  по настоящему профессионалов, которые владеют всей актуальной информацией и знают все тонкости в этом
+                  деле, сейчас не легко. Все документы были подготовлены оперативно, девушки сопровождали меня на всех
+                  этапах. Отдельная благодарность Евгении, которая постоянно была на связи.</p>
+              </div>
+              <div class="feedback__card-row feedback__card-row-link">
+                <a href="#!" class="feedback__card-link">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide feedback__card">
+              <div class="feedback__card-row">
+                <h3 class="feedback__card-title">Александра</h3>
+                <span class="feedback__card-subtitle color-accent">Апартаменты</span>
+              </div>
+              <div class="feedback__card-row">
+                <p class="feedback__card-desctription">Хочу поделиться своим опытом сотрудничества: Обратилась в
+                  агентство по поводу продления туристического вида на жительство. Долго искала агента, потому что найти
+                  по настоящему профессионалов, которые владеют всей актуальной информацией и знают все тонкости в этом
+                  деле, сейчас не легко. Все документы были подготовлены оперативно, девушки сопровождали меня на всех
+                  этапах. Отдельная благодарность Евгении, которая постоянно была на связи.</p>
+              </div>
+              <div class="feedback__card-row feedback__card-row-link">
+                <a href="#!" class="feedback__card-link">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide feedback__card">
+              <div class="feedback__card-row">
+                <h3 class="feedback__card-title">Владимир</h3>
+                <span class="feedback__card-subtitle color-accent">Квартира</span>
+              </div>
+              <div class="feedback__card-row">
+                <p class="feedback__card-desctription">Хочу поделиться своим опытом сотрудничества: Обратилась в
+                  агентство по поводу продления туристического вида на жительство. Долго искала агента, потому что найти
+                  по настоящему профессионалов, которые владеют всей актуальной информацией и знают все тонкости в этом
+                  деле, сейчас не легко. Все документы были подготовлены оперативно, девушки сопровождали меня на всех
+                  этапах. Отдельная благодарность Евгении, которая постоянно была на связи.</p>
+              </div>
+              <div class="feedback__card-row feedback__card-row-link">
+                <a href="#!" class="feedback__card-link">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide feedback__card">
+              <div class="feedback__card-row">
+                <h3 class="feedback__card-title">Виктория</h3>
+                <span class="feedback__card-subtitle color-accent">Апартаменты</span>
+              </div>
+              <div class="feedback__card-row">
+                <p class="feedback__card-desctription">Хочу поделиться своим опытом сотрудничества: Обратилась в
+                  агентство по поводу продления туристического вида на жительство. Долго искала агента, потому что найти
+                  по настоящему профессионалов, которые владеют всей актуальной информацией и знают все тонкости в этом
+                  деле, сейчас не легко. Все документы были подготовлены оперативно, девушки сопровождали меня на всех
+                  этапах. Отдельная благодарность Евгении, которая постоянно была на связи.</p>
+              </div>
+              <div class="feedback__card-row feedback__card-row-link">
+                <a href="#!" class="feedback__card-link">Читать полностью</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="office-location">
+    <div class="container">
+      <div class="office-location__inner">
+        <div class="office-location__swiper">
+          <img src="./img/office-location/office-location-mexico-1.png" alt="">
+        </div>
+        <h2 class="office-location__title">Офис в самом сердце <span class="color-accent">Кинтана-Роо</span></h2>
+        <div class="office-location__countries">
+          <button class="office-location__button btn active">Мексика</button>
+          <button class="office-location__button btn">Москва</button>
+        </div>
+        <p class="office-location__description">Мексиканский офис компании располагается в штате Кинтана-Роо. В
+          уютной переговорной за чашкой кофе мы обсудим ваши пожеланию к объекту недвижимости и подберем лучшие
+          условия.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="container">
+      <div class="feature__inner">
+        <div class="feature__text">
+          <h2 class="feature__title">Почему <br>
+            <span class="color-accent">Кинтана-Роо</span>?
+          </h2>
+          <div class="feature__description">
+            <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
+              используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+              распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..
+              Здесь ваш текст.. </p>
+            <p>Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в
+              качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много
+              веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил
+              много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические
+              варианты).</p>
+          </div>
+        </div>
+        <div class="feature__img">
+          <img src="./img/feature/map-location-full.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="consultation">
+    <div class="container">
+      <div class="consultation__inner">
+
+        <h2 class="consultation__title">Консультация <br>
+          риелтора</h2>
+        <p class="consultation__subtitle">Для клиентов из любой точки мира</p>
+        <div class="consultation__form">
+          <form action="" class="form">
+            <input data-tel-input class="form__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+            <button type="reset" class="form__btn" onclick="buttonClick()">Записаться</button>
+          </form>
+          <p class="consultation__form-text">
+            Отправляя заявку, вы соглашаетесь на <a href="#!">обработку персональных данных</a>
+          </p>
+        </div>
+        <div class="consultation__badge">
+          <div class="consultation__badge-img online">
+            <div class="border-radius-50"><img src="./img/consultation/profile-picture.png" alt="profile picture"></div>
+          </div>
+          <div class="consultation__badge-textblog">
+            <h3 class="consultation__badge-title">Вероника</h3>
+            <p class="consultation__badge-text">Менеджер по продажам</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__section-info">
+          <a href="#!" class="logo"><img src="./img/logo.svg" alt=""></a>
+          <div class="footer__languages">
+            <a href="#!" class="footer__language active">RUS</a>
+            <span> / </span>
+            <a href="#!" class="footer__language">ENG</a>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footerm__menu-list-item"><a href="#!">Недвижимость</a></li>
+              <li class="footerm__menu-list-item"><a href="#!">Лучшие предложения</a></li>
+              <li class="footerm__menu-list-item"><a href="#!">Каталоги</a></li>
+              <li class="footerm__menu-list-item"><a href="#!">Проекты</a></li>
+              <li class="footerm__menu-list-item"><a href="#!">О нас</a></li>
+            </ul>
+            <ul class="footer__menu-list socials">
+              <li class="footerm__menu-list-item"><a href="#!">Вконтакте</a></li>
+              <li class="footerm__menu-list-item"><a href="#!">Telegram</a></li>
+              <li class="footerm__menu-list-item"><a href="#!">Я.Дзен</a></li>
+              <li class="footerm__menu-list-item"><a href="#!">WhatsApp</a></li>
+            </ul>
+          </div>
+          <div class="footer__badge">
+            <div class="footer__badge-img online"><img src="./img/nav/profile-picture.png" alt="profile picture">
+            </div>
+            <div class="footer__badge-text">
+              <p>Есть вопросы? Мы онлайн!</p>
+              <a href="#!">+7 (495) 222-33-44</a>
+            </div>
+          </div>
+          <div class="footer__reg-info">
+            <p>ИНН 0000000000</p>
+            <p>ОГРН 0000000000000</p>
+          </div>
+        </div>
+        <div class="footer__section-policy">
+          <div class="footer__section-policy-docs">
+            <a href="#!">© luxury real estate mexico</a>
+            <a href="#!">Пользовательское соглашение</a>
+            <a href="#!">Политика обработки персональных данных</a>
+          </div>
+          <div class="footer__languages">
+            <a href="#!" class="footer__language active">RUS</a>
+            <span> / </span>
+            <a href="#!" class="footer__language">ENG</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+  </footer>
+  <script src='./js/swiper-bundle.min.js'></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+body {
+  color: $color-white;
+  background-color: $color-bg;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+a {
+  color: $color-white;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: $font-angst;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  color: $color-white;
+  font-family: Angst;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 26.4px */
+}
+
+p {
+  font-size: 16px;
+  font-family: $font-winston;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.none {
+  display: none !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.color-accent {
+  color: $color-accent;
+}
+
+.btn {
+
+  font-family: $font-winston;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  transition: background-color 0.2s ease-in,
+    color 0.2s ease-in;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-accent;
+  }
+
+  &.blocked {
+    color: $color-white;
+    background-color: $color-gray;
+  }
+
+  &.active {
+    color: $color-white;
+    background-color: $color-accent;
+    border: 1px solid $color-accent !important;
+  }
+}
+
+
+.new {
+  &::after {
+    content: 'NEW';
+    color: $color-white;
+    background-color: $color-accent;
+    font-family: $font-winston;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    padding: 0 6px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    border-radius: $border-radius;
+    /* 19.6px */
+  }
+}
+
+.error-placeholder {
+  &::placeholder {
+    color: $color-red !important;
+  }
+}
+
+.online {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background-color: $color-accent;
+    border-radius: 50%;
+    border: 3px solid $color-biege;
+    background-color: $color-accent;
+  }
+
+  @include mediaMobile {
+    &::after {
+      content: '';
+      position: absolute;
+      display: flex;
+      width: 10px;
+      height: 10px;
+
+      border: 2px solid $color-biege;
+
+    }
+  }
+
+}
+
+.border-radius-50 {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 80;
+}

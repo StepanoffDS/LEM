@@ -1,0 +1,121 @@
+.catalog {
+  margin-top: 120px;
+}
+
+.catalog__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 595px;
+  padding: 60px;
+  background-color: $color-biege;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -140px;
+    width: 100%;
+    height: 584px;
+    background-image: url('./../img/catalog/catalog-bg.png');
+    background-position: 50% 75%; // x y
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+}
+
+.catalog__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__text-title {
+  color: $color-bg;
+  max-width: 697px;
+  z-index: 1;
+}
+
+.catalog__text-description {
+  color: $color-bg;
+  max-width: 366px;
+  text-align: right;
+  z-index: 1;
+}
+
+.catalog__button {
+  margin-top: 40px;
+  padding: 20px 40px;
+  display: flex;
+  max-width: 270px;
+  background-color: $color-bg;
+  border-radius: 30px;
+  color: $color-white;
+  font-family: $font-winston;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: background-color 0.2s ease-in;
+
+  &::before {
+    content: '';
+    background-image: url('./../img/icons/download-white.svg');
+    background-position: center center; // x y
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: $color-accent;
+  }
+}
+
+@include mediaTablet {
+  .catalog {
+    margin-top: 80px;
+  }
+}
+
+@include mediaMobile {
+  .catalog__inner {
+    height: 537px;
+    padding: 20px;
+    background-color: $color-biege;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 20px;
+      bottom: -40px;
+      width: 100%;
+      height: 310px;
+      background-image: url('./../img/catalog/catalog-bg.png');
+      background-position: 0%; // x y
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+  }
+
+  .catalog__text {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .catalog__text-description {
+    text-align: left;
+  }
+}

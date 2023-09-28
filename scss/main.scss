@@ -1,0 +1,28 @@
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/animations";
+@import "./base/base";
+@import "./base/containers";
+@import "./base/swiper";
+
+
+
+/* Blocks */
+@import "./blocks/popup";
+@import "./blocks/forms";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/nav-icon";
+@import "./blocks/promo";
+@import "./blocks/types";
+@import "./blocks/best-offer";
+@import "./blocks/swiper-offer";
+@import "./blocks/catalog";
+@import "./blocks/benefit";
+@import "./blocks/feedback";
+@import "./blocks/office-location";
+@import "./blocks/feature";
+@import "./blocks/consultation";
+@import "./blocks/footer";

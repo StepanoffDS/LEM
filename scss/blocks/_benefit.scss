@@ -1,0 +1,160 @@
+.benefit {
+  margin-top: 120px;
+}
+
+.benefit__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit-row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit__button {
+  position: relative;
+  display: flex;
+  padding: 19px 40px;
+  color: $color-bg;
+  background-color: $color-white;
+  border-radius: 60px;
+
+  &::before {
+    content: "";
+    display: flex;
+    background-image: url('./../img/icons/arrow-right-white.svg');
+    background-position: center center; // x y
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: filter 0.2s ease-in;
+    filter: invert(100%);
+  }
+
+  &:hover::before {
+    background-image: url('./../img/icons/arrow-right-white.svg');
+    filter: invert(0%);
+  }
+}
+
+.benefit__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+  gap: 24px;
+}
+
+.benefit__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+
+  min-height: 168px;
+  overflow: hidden;
+
+  border: 1px solid rgba($color: $color-white, $alpha: 0.1);
+  border-radius: $border-radius;
+  position: relative;
+
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: $color-accent;
+    border-color: $color-accent;
+  }
+
+  &:hover .benefit__card-description {
+    color: rgba($color: $color-white, $alpha: 1);
+  }
+
+  &:hover::after {
+    color: $color-bg;
+  }
+
+  &::after {
+    position: absolute;
+    right: 7%;
+    bottom: -46px;
+    color: $color-accent;
+    font-family: Angst;
+    font-size: 169px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 110%;
+  }
+
+  &.first::after {
+    content: "1";
+  }
+
+  &.second::after {
+    content: "2";
+  }
+
+  &.third::after {
+    content: "3";
+  }
+
+  &.fourth::after {
+    content: "4";
+  }
+
+
+}
+
+.benefit__card-title {}
+
+.benefit__card-description {
+  color: $color-gray;
+  max-width: 300px;
+}
+
+@include mediaTablet {
+  .benefit {
+    margin-top: 80px;
+  }
+
+  .benefit__card {
+    &::after {
+      font-size: 100px;
+      bottom: -26px;
+    }
+  }
+}
+
+@include mediaTabletExtra {
+  .benefit__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benefit__card {
+    &::after {
+      font-size: 169px;
+      bottom: -46px;
+    }
+  }
+}
+
+@include mediaMobile {
+  .benefit__button {
+    display: none;
+  }
+
+  .benefit__card {
+    padding: 20px;
+
+    &::after {
+      font-size: 100px;
+      bottom: -26px;
+    }
+  }
+
+  .benefit__card-description {
+    width: 80%;
+    // max-width: 187px;
+  }
+}
